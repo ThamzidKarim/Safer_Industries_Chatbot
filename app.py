@@ -18,7 +18,7 @@ from chainlit.data.sql_alchemy import SQLAlchemyDataLayer
 
 @cl.data_layer
 def get_data_layer():
-    conninfo = "postgresql+asyncpg://postgres.dreowbtmqrfkcaxancpv:Safer123%21@aws-0-eu-west-2.pooler.supabase.com:6543/postgres"
+    conninfo = "postgresql+asyncpg://postgres:Safer123%21@db.dreowbtmqrfkcaxancpv.supabase.co:5432/postgres"
     return SQLAlchemyDataLayer(conninfo=conninfo)
 
 
